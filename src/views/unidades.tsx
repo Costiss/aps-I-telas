@@ -25,7 +25,7 @@ const unidades = [
 
 export default function Unidades() {
     return (
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex w-[400px] flex-col items-center justify-center">
             <div className="flex flex-col gap-4">
                 <h1>Unidades Próximas</h1>
             </div>

@@ -39,7 +39,7 @@ const medicos = [
 export default function Medicos() {
     return (
         <div>
-            <div className="flex flex-col gap-4">
+            <div className="flex w-[400px] flex-col gap-4">
                 <FormControl>
                     <InputGroup>
                         <InputLeftAddon>

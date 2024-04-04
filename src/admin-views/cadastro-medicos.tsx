@@ -1,22 +1,24 @@
-import { Button, FormControl, FormLabel, Input } from "@chakra-ui/react";
+import {
+    Button,
+    FormControl,
+    FormLabel,
+    Input,
+    Select,
+} from "@chakra-ui/react";
 
-export default function FormularioAdesao() {
+export default function CadastroMedicos() {
     return (
-        <div className="flex w-[400px] flex-col gap-4">
-            <div className="mb-6">
-                <h1 className="text-3xl">Formulário de Adesão</h1>
+        <div className="flex flex-col gap-4">
+            <div className="mb-6 w-[400px]">
+                <h1 className="text-3xl">Cadastro de Medico</h1>
             </div>
             <FormControl isRequired>
-                <FormLabel>CPF</FormLabel>
+                <FormLabel>CPF/CNPJ</FormLabel>
                 <Input></Input>
             </FormControl>
             <FormControl isRequired>
                 <FormLabel>Nome</FormLabel>
                 <Input></Input>
-            </FormControl>
-            <FormControl isRequired>
-                <FormLabel>Senha</FormLabel>
-                <Input type="password"></Input>
             </FormControl>
             <FormControl isRequired>
                 <FormLabel>Email</FormLabel>
@@ -27,16 +29,20 @@ export default function FormularioAdesao() {
                 <Input></Input>
             </FormControl>
             <FormControl isRequired>
-                <FormLabel>Endereco completo</FormLabel>
+                <FormLabel>Endereço do consultório</FormLabel>
                 <Input></Input>
             </FormControl>
-            <FormControl isRequired>
-                <FormLabel>Data de Nascimento</FormLabel>
-                <Input type="date"></Input>
+            <FormControl>
+                <FormLabel>Especialidade</FormLabel>
+                <Select>
+                    <option>Selecione uma especialidade...</option>
+                    <option>Dermatologista</option>
+                    <option>Urologista</option>
+                </Select>
             </FormControl>
             <FormControl className="mt-6 flex flex-col gap-2">
                 <Button colorScheme="blue" size="lg" className="w-full">
-                    Enviar
+                    Cadastrar
                 </Button>
                 <Button
                     colorScheme="blue"

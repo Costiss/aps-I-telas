@@ -1,10 +1,11 @@
-import { Button, Stack } from "@chakra-ui/react";
+import { Button, Image, Stack } from "@chakra-ui/react";
 
 export default function MenuPrincipal() {
     return (
         <div className="flex flex-col gap-4">
             <h1 className="text-3xl">Bem Vindo, Fulano!</h1>
             <Stack>
+                <Image src="/menu.png" width={300} className="my-10" />
                 <Button colorScheme="blue" size="lg" variant="outline">
                     Carteirinha Virtual
                 </Button>

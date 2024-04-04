@@ -3,7 +3,7 @@ import { Button, FormControl, FormLabel, Input } from "@chakra-ui/react";
 export default function Login() {
     return (
         <>
-            <div className="flex h-screen w-[300px] flex-col items-center justify-center gap-4">
+            <div className="flex h-screen w-[400px] flex-col items-center justify-center gap-4">
                 <div className="mb-4">
                     <h1>JamesCare</h1>
                 </div>

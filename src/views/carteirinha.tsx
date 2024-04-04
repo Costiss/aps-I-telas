@@ -2,7 +2,7 @@ import { Button, FormControl, FormLabel, Input } from "@chakra-ui/react";
 
 export default function Carteirinha() {
     return (
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex w-[400px] flex-col items-center justify-center">
             <div className="flex flex-col gap-4">
                 <h1>Carteirinha</h1>
                 <FormControl>
